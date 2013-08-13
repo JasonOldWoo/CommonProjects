@@ -6,4 +6,4 @@ please reply as soon as you find any problems
 
 all of projects are programmed by C/C++
 
-gcc/g++ compiler are recommended
+gcc/g++ compiler is recommended
