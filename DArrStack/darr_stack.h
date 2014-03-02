@@ -56,6 +56,7 @@ public:
 			delete elems[m_top];
 			elems[m_top] = NULL;
 			m_arrlen[m_top] = 0;
+			m_top--;
 			return ret;
 		}
 		else
