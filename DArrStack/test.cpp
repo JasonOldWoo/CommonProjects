@@ -1,7 +1,7 @@
 #include "darr_stack.h"
 #define BUF_SIZE 1024
 
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	DArrStack<char> arr_stk;
 	char str[BUF_SIZE] = "Hello, world!";
