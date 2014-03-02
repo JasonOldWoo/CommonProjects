@@ -37,7 +37,10 @@ public:
 		{
 			m_top++;
 			if (elems[m_top])
+			{
 				delete [](elems[m_top]);
+				elems[m_top] = NULL;
+			}
 			elems[m_top] = new T[len];
 			memcpy(elems[m_top], item, len*sizeof(T));
 			m_arrlen[m_top] = len;
