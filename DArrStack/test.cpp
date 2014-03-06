@@ -1,10 +1,6 @@
 #include "darr_stack.h"
-#define BUF_SIZE 1024
-
-int main(int argc, char *argv[])
-{
-#include "darr_stack.h"
 #include <cstdio>
+#include <cstring>
 #define BUF_SIZE 1024
 
 int main(int argc, char *argv[])
@@ -43,6 +39,4 @@ int main(int argc, char *argv[])
                 std::cout << tmp << std::endl;
 
         return 0;
-}
-
 }
