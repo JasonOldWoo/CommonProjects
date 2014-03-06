@@ -1,3 +1,8 @@
+/**
+ * @file darr_stack.h
+ * @author Jason
+ **/
+
 #include <iostream>
 template <class T>
 class DArrStack
@@ -71,6 +76,7 @@ public:
 			return NULL;
 	}
 
+	/* Return the length of top elements */
 	size_t GetTopArrLen()
 	{
 		return m_arrlen[m_top];
@@ -92,7 +98,8 @@ public:
 			return false;
 	}
 
-	void Destroy()
+	/* Clear the Stack */
+	void Clear()
 	{
 		for (int tmp_cnt=0; tmp_cnt<MaxSize; tmp_cnt++)
 		{
