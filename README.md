@@ -2,6 +2,4 @@ Jason
 =====
 Weclome to Jason's repositories
 
-please reply as soon as you find any problems
-
-all of projects are programmed by C/C++
+please reply if you find any problem
