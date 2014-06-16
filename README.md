@@ -2,4 +2,6 @@ Jason
 =====
 Weclome to Jason's repositories
 
-please reply if you find any problem
+please reply to me soon if you find any problems, thx!
+
+brucecen2@gmail.com
