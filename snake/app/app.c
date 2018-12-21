@@ -4,6 +4,16 @@
 this is main code
 ************************/
 
+void game_wait(int level)
+{
+    struct timeval tmv;
+    tmv.tv_sec = 0;
+    tmv.tv_usec = 200000;
+    if (level >= 2) tmv.tv_usec -= 50000;
+    if (level >= 3) tmv.tv_usec -= 45000;
+    if (level >= 4) tmv.tv_usec -= 40000;
+    select(0, NULL, NULL, NULL, &tmv);
+}
 
 SHEAD *init_snake()
 {
@@ -54,7 +64,8 @@ void game(SHEAD *snake)
 	while (1)
 	{
 		
-		for (i=0; i<60000000-12000000*level; i++);
+		//for (i=0; i<60000000-12000000*level; i++);
+                game_wait(level);
 		printf("%s","\033[1H\033[2J");
 		if (judge_lose(map, snake))
 			break;
